@@ -5,7 +5,7 @@ const getSortedFileNames = require("./files");
 /**
  * Convert array to object without duplicates.
  * @param {Array<string>} arr Array of strings.
- * @returns {Object} Object with count each line.
+ * @returns {Object} Object with the same key and value.
  */
 function convertArrToObj(arr) {
 	return arr.reduce((obj, curr) => {

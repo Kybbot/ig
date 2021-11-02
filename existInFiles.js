@@ -47,7 +47,7 @@ function existInFiles(folderName, numberOfFiles = 20) {
 	}
 
 	fs.writeFileSync(`existIn${numberOfFiles}Files.txt`, JSON.stringify(Object.values(obj)), "utf8");
-	console.log(`exist in ${numberOfFiles} files` + Object.keys(obj).length);
+	console.log(`exist in ${numberOfFiles} files: ` + Object.keys(obj).length);
 }
 
 module.exports = existInFiles;
